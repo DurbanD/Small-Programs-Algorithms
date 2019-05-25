@@ -1,7 +1,8 @@
 def is_prime(num):
 #Don't Count 0 or 1, just return False
 	if num == 0 or num == 1 or num == -1:
-		print(f"{num} is not a Prime number.") #Print Statement for feedback
+#Print Statement for feedback
+		print(f"{num} is not a Prime number.") 
 		return False
 #Check if the number is negative
 	if num < 0:
@@ -11,14 +12,16 @@ def is_prime(num):
 	for i in range(2,num+1):
 #check to see if num is divisible by any of them
 		if num % i == 0 and i != num:
+#Print Statement for feedback
+			print(f"{num} is not a Prime number. It is divisible by {i}") 
 #if it is return False
-			print(f"{num} is not a Prime number. It is divisible by {i}") #Print Statement for feedback
 			return False
 #If not continue on
 	else:
 		pass
+#Print Statement for feedback
+	print(f'{num} is a Prime Number!') 
 #Then Return True if it makes it through
-	print(f'{num} is a Prime Number!') #Print Statement for feedback
 	return True
 
 
@@ -38,10 +41,9 @@ def interact():
 
 #Call Interactive Function
 interact = interact()
-#Use it with the Prime Checker
+#Call is_prime with interactivity
 print(is_prime(interact))
 
-# print(is_prime(0))
 #Call some absurdly high number as a test
 # import random
 # print(is_prime(random.randint(0,10**100000)))
