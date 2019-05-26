@@ -8,7 +8,7 @@ if vernum <= 3:
 
 ###Function to make interactive
 def interact():
-#Asks for a Flour in Grams
+#Asks for Flour in Grams
 	while True:
 		try:
 			flourweight = float(input("Please Enter Flour Weight in Grams: "))
